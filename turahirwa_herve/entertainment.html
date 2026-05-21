@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Event Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1659d6, #243b55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container{
+            background: white;
+            padding: 30px;
+            width: 450px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+
+        h2{
+            text-align: center;
+            color: #243b55;
+            margin-bottom: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p{
+            text-align: center;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea{
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus{
+            border-color: #243b55;
+            box-shadow: 0px 0px 5px #243b55;
+        }
+
+        textarea{
+            resize: none;
+            height: 90px;
+        }
+
+        .radio-group,
+        .checkbox-group{
+            margin-top: 10px;
+        }
+
+        .radio-group label,
+        .checkbox-group label{
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        button{
+            width: 100%;
+            padding: 14px;
+            border: none;
+            background: #243b55;
+            color: white;
+            font-size: 17px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background: #141e30;
+            transform: scale(1.03);
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 15px;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Entertainment Event Registration</h2>
+        <p>Fill the form to participate in the entertainment event</p>
+
+        <form>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone number">
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age">
+
+            <label>Country</label>
+            <input type="text" placeholder="Enter your country">
+
+            <label>Entertainment Type</label>
+            <select>
+                <option>Music</option>
+                <option>Dance</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+                <option>DJ Performance</option>
+                <option>Poetry</option>
+                <option>Fashion Show</option>
+            </select>
+
+            <label>Favorite Artist</label>
+            <input type="text" placeholder="Enter favorite artist">
+
+            <label>Event Date</label>
+            <input type="date">
+
+            <label>Event Time</label>
+            <input type="time">
+
+            <label>Ticket Type</label>
+            <select>
+                <option>VIP</option>
+                <option>Regular</option>
+                <option>Student</option>
+            </select>
+
+            <label>Services Needed</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Food</label>
+                <label><input type="checkbox"> Drinks</label>
+                <label><input type="checkbox"> Transport</label>
+            </div>
+            <label>Message</label>
+            <textarea placeholder="Write your comments here..."></textarea>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+        <div class="footer">
+            © 2026 Entertainment Event System
+        </div>
+
+    </div>
+
+</body>
+</html>
